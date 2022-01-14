@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\arrow\array\array_base.cc" />
+    <ClCompile Include="..\src\arrow\array\array_binary.cc" />
+    <ClCompile Include="..\src\arrow\array\array_decimal.cc" />
+    <ClCompile Include="..\src\arrow\array\array_dict.cc" />
+    <ClCompile Include="..\src\arrow\array\array_nested.cc" />
+    <ClCompile Include="..\src\arrow\array\array_primitive.cc" />
+    <ClCompile Include="..\src\arrow\array\builder_adaptive.cc" />
+    <ClCompile Include="..\src\arrow\array\builder_base.cc" />
+    <ClCompile Include="..\src\arrow\array\builder_binary.cc" />
+    <ClCompile Include="..\src\arrow\array\builder_decimal.cc" />
+    <ClCompile Include="..\src\arrow\array\builder_dict.cc" />
+    <ClCompile Include="..\src\arrow\array\builder_nested.cc" />
+    <ClCompile Include="..\src\arrow\array\builder_primitive.cc" />
+    <ClCompile Include="..\src\arrow\array\builder_union.cc" />
+    <ClCompile Include="..\src\arrow\array\concatenate.cc" />
+    <ClCompile Include="..\src\arrow\array\data.cc" />
+    <ClCompile Include="..\src\arrow\array\diff.cc" />
+    <ClCompile Include="..\src\arrow\array\diff_test.cc" />
+    <ClCompile Include="..\src\arrow\array\util.cc" />
+    <ClCompile Include="..\src\arrow\array\validate.cc" />
+    <ClCompile Include="..\src\arrow\buffer.cc" />
+    <ClCompile Include="..\src\arrow\builder.cc" />
+    <ClCompile Include="..\src\arrow\chunked_array.cc" />
+    <ClCompile Include="..\src\arrow\compare.cc" />
+    <ClCompile Include="..\src\arrow\config.cc" />
+    <ClCompile Include="..\src\arrow\c\bridge.cc" />
+    <ClCompile Include="..\src\arrow\datum.cc" />
+    <ClCompile Include="..\src\arrow\device.cc" />
+    <ClCompile Include="..\src\arrow\extension_type.cc" />
+    <ClCompile Include="..\src\arrow\io\buffered.cc" />
+    <ClCompile Include="..\src\arrow\io\buffered_test.cc" />
+    <ClCompile Include="..\src\arrow\io\caching.cc" />
+    <ClCompile Include="..\src\arrow\io\compressed.cc" />
+    <ClCompile Include="..\src\arrow\io\compressed_test.cc" />
+    <ClCompile Include="..\src\arrow\io\file.cc" />
+    <ClCompile Include="..\src\arrow\io\file_test.cc" />
+    <ClCompile Include="..\src\arrow\io\hdfs.cc" />
+    <ClCompile Include="..\src\arrow\io\hdfs_internal.cc" />
+    <ClCompile Include="..\src\arrow\io\hdfs_test.cc" />
+    <ClCompile Include="..\src\arrow\io\interfaces.cc" />
+    <ClCompile Include="..\src\arrow\io\memory.cc" />
+    <ClCompile Include="..\src\arrow\io\memory_test.cc" />
+    <ClCompile Include="..\src\arrow\io\slow.cc" />
+    <ClCompile Include="..\src\arrow\io\stdio.cc" />
+    <ClCompile Include="..\src\arrow\io\test_common.cc" />
+    <ClCompile Include="..\src\arrow\io\transform.cc" />
+    <ClCompile Include="..\src\arrow\ipc\feather_test.cc" />
+    <ClCompile Include="..\src\arrow\ipc\json_simple_test.cc" />
+    <ClCompile Include="..\src\arrow\ipc\read_write_test.cc" />
+    <ClCompile Include="..\src\arrow\ipc\tensor_test.cc" />
+    <ClCompile Include="..\src\arrow\ipc\test_common.cc" />
+    <ClCompile Include="..\src\arrow\memory_pool.cc" />
+    <ClCompile Include="..\src\arrow\pretty_print.cc" />
+    <ClCompile Include="..\src\arrow\record_batch.cc" />
+    <ClCompile Include="..\src\arrow\result.cc" />
+    <ClCompile Include="..\src\arrow\scalar.cc" />
+    <ClCompile Include="..\src\arrow\sparse_tensor.cc" />
+    <ClCompile Include="..\src\arrow\status.cc" />
+    <ClCompile Include="..\src\arrow\table.cc" />
+    <ClCompile Include="..\src\arrow\table_builder.cc" />
+    <ClCompile Include="..\src\arrow\tensor.cc" />
+    <ClCompile Include="..\src\arrow\tensor\coo_converter.cc" />
+    <ClCompile Include="..\src\arrow\tensor\csf_converter.cc" />
+    <ClCompile Include="..\src\arrow\tensor\csx_converter.cc" />
+    <ClCompile Include="..\src\arrow\testing\generator.cc" />
+    <ClCompile Include="..\src\arrow\testing\json_integration.cc" />
+    <ClCompile Include="..\src\arrow\testing\json_internal.cc" />
+    <ClCompile Include="..\src\arrow\testing\random.cc" />
+    <ClCompile Include="..\src\arrow\testing\util.cc" />
+    <ClCompile Include="..\src\arrow\type.cc" />
+    <ClCompile Include="..\src\arrow\util\async_util.cc" />
+    <ClCompile Include="..\src\arrow\util\basic_decimal.cc" />
+    <ClCompile Include="..\src\arrow\util\bitmap.cc" />
+    <ClCompile Include="..\src\arrow\util\bitmap_builders.cc" />
+    <ClCompile Include="..\src\arrow\util\bitmap_ops.cc" />
+    <ClCompile Include="..\src\arrow\util\bit_block_counter.cc" />
+    <ClCompile Include="..\src\arrow\util\bit_run_reader.cc" />
+    <ClCompile Include="..\src\arrow\util\bit_util.cc" />
+    <ClCompile Include="..\src\arrow\util\bpacking.cc" />
+    <ClCompile Include="..\src\arrow\util\byte_size.cc" />
+    <ClCompile Include="..\src\arrow\util\cancel.cc" />
+    <ClCompile Include="..\src\arrow\util\compression.cc" />
+    <ClCompile Include="..\src\arrow\util\compression_brotli.cc" />
+    <ClCompile Include="..\src\arrow\util\compression_bz2.cc" />
+    <ClCompile Include="..\src\arrow\util\compression_lz4.cc" />
+    <ClCompile Include="..\src\arrow\util\compression_snappy.cc" />
+    <ClCompile Include="..\src\arrow\util\compression_zlib.cc" />
+    <ClCompile Include="..\src\arrow\util\compression_zstd.cc" />
+    <ClCompile Include="..\src\arrow\util\counting_semaphore.cc" />
+    <ClCompile Include="..\src\arrow\util\cpu_info.cc" />
+    <ClCompile Include="..\src\arrow\util\decimal.cc" />
+    <ClCompile Include="..\src\arrow\util\delimiting.cc" />
+    <ClCompile Include="..\src\arrow\util\formatting.cc" />
+    <ClCompile Include="..\src\arrow\util\future.cc" />
+    <ClCompile Include="..\src\arrow\util\int_util.cc" />
+    <ClCompile Include="..\src\arrow\util\io_util.cc" />
+    <ClCompile Include="..\src\arrow\util\key_value_metadata.cc" />
+    <ClCompile Include="..\src\arrow\util\logging.cc" />
+    <ClCompile Include="..\src\arrow\util\memory.cc" />
+    <ClCompile Include="..\src\arrow\util\mutex.cc" />
+    <ClCompile Include="..\src\arrow\util\string.cc" />
+    <ClCompile Include="..\src\arrow\util\string_builder.cc" />
+    <ClCompile Include="..\src\arrow\util\task_group.cc" />
+    <ClCompile Include="..\src\arrow\util\tdigest.cc" />
+    <ClCompile Include="..\src\arrow\util\thread_pool.cc" />
+    <ClCompile Include="..\src\arrow\util\time.cc" />
+    <ClCompile Include="..\src\arrow\util\trie.cc" />
+    <ClCompile Include="..\src\arrow\util\unreachable.cc" />
+    <ClCompile Include="..\src\arrow\util\uri.cc" />
+    <ClCompile Include="..\src\arrow\util\utf8.cc" />
+    <ClCompile Include="..\src\arrow\util\value_parsing.cc" />
+    <ClCompile Include="..\src\arrow\vendored\base64.cpp" />
+    <ClCompile Include="..\src\arrow\vendored\datetime\tz.cpp" />
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\bignum-dtoa.cc" />
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\bignum.cc" />
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\cached-powers.cc" />
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\diy-fp.cc" />
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\double-conversion.cc" />
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\fast-dtoa.cc" />
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\fixed-dtoa.cc" />
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\strtod.cc" />
+    <ClCompile Include="..\src\arrow\vendored\musl\strptime.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriCommon.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriCompare.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriEscape.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriFile.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriIp4.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriIp4Base.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriMemory.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriNormalize.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriNormalizeBase.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriParse.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriParseBase.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriQuery.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriRecompose.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriResolve.c" />
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriShorten.c" />
+    <ClCompile Include="..\src\arrow\visitor.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\arrow\util\compression.h" />
+    <ClInclude Include="..\src\arrow\util\compression_internal.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E02EF412-186A-44C4-B305-23BFE5DF0B86}</ProjectGuid>
+    <RootNamespace>parquetlib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-->
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)..\..\..\mimalloc\include;$(SolutionDir)..\..\..\arrow\cpp\src;$(SolutionDir)..\..\..\benchmark\include;$(SolutionDir)..\..\..\thrift\lib\cpp\src;$(SolutionDir)..\..\..\googletest\googletest\include;$(SolutionDir)..\..\..\googletest\googlemock\include;$(SolutionDir)..\..\..\boost\assert\include;$(SolutionDir)..\..\..\boost\container_hash\include;$(SolutionDir)..\..\..\boost\config\include;$(SolutionDir)..\..\..\boost\core\include;$(SolutionDir)..\..\..\boost\detail\include;$(SolutionDir)..\..\..\boost\filesystem\include;$(SolutionDir)..\..\..\boost\io\include;$(SolutionDir)..\..\..\boost\iterator\include;$(SolutionDir)..\..\..\boost\numeric_conversion\include;$(SolutionDir)..\..\..\boost\math\include;$(SolutionDir)..\..\..\boost\mpl\include;$(SolutionDir)..\..\..\boost\multiprecision\include;$(SolutionDir)..\..\..\boost\predef\include;$(SolutionDir)..\..\..\boost\preprocessor\include;$(SolutionDir)..\..\..\boost\smart_ptr\include;$(SolutionDir)..\..\..\boost\static_assert\include;$(SolutionDir)..\..\..\boost\system\include;$(SolutionDir)..\..\..\boost\throw_exception\include;$(SolutionDir)..\..\..\boost\type_traits\include;$(SolutionDir)..\..\..\boost\winapi\include;$(VSInstallDir)SDK\ScopeCppSDK\SDK\include\ucrt;$(SolutionDir)..\..\..\snappy;$(SolutionDir)..\..\..\brotli\c\include;$(SolutionDir)..\..\..\bzlib;$(SolutionDir)..\..\..\lz4\lib;$(SolutionDir)..\..\..\zlib;$(SolutionDir)..\..\..\zstd\lib;$(SolutionDir)..\..\..\rapidjson\include;$(SolutionDir)..\..\..\opentelemetry-cpp\api\include;$(SolutionDir)..\..\..\opentelemetry-cpp\exporters\ostream\include;$(SolutionDir)..\..\..\opentelemetry-cpp\exporters\otlp\include;$(SolutionDir)..\..\..\opentelemetry-cpp\sdk\include;$(SolutionDir)..\thirdparty\hadoop\include;$(SolutionDir)..\thirdparty\flatbuffers\include;$(SolutionDir)..\..\c_glib;$(SolutionDir)..\..\c_glib\arrow-cuda-glib;$(SolutionDir)..\..\..\protobuf\src;$(IncludePath)</IncludePath>
+    <SourcePath>f:\hl\dev\git\thrift\lib\cpp\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_MSVC;_MSC_VER=1915;PARQUET_EXPORTING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>BOOST_MSVC;_MSC_VER=1915;PARQUET_IMPORTING;ARROW_EXPORTING;ARROW_MIMALLOC;_WIN32;_M_X64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

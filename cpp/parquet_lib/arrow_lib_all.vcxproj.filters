@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d76a2da0-68a0-4fe8-b16a-fbe4aaf2fe72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bc8dc68e-402c-4c8a-a219-293a946ff360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\array">
+      <UniqueIdentifier>{1d0dfd53-26e1-4eb1-bc0b-7f77c23a6703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tensor">
+      <UniqueIdentifier>{bc2bd2f8-1959-43a2-a57d-2cf15f3905f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\c">
+      <UniqueIdentifier>{03e2f6db-fffa-485c-8da8-3624a19df92f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\io">
+      <UniqueIdentifier>{7047b131-26b5-4a3b-936a-78af2fda2942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{1042d9c1-054d-4324-a7cd-182a0010b3f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vendored">
+      <UniqueIdentifier>{2808de2d-51d8-480d-bba3-c3ceeef8d85c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vendored\datetime">
+      <UniqueIdentifier>{30a4a0be-9367-4655-9758-12e694722dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vendored\double-conversion">
+      <UniqueIdentifier>{15289600-ff0c-499f-89ba-12719edc212d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vendored\musl">
+      <UniqueIdentifier>{1778118d-3c1f-4899-9e4b-f3f271c7f388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vendored\uriparser">
+      <UniqueIdentifier>{77ecff3e-7f52-4257-a616-0a5829edbc5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\testing">
+      <UniqueIdentifier>{647354bf-e691-4f94-998a-eb5113fc6ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\testing\io">
+      <UniqueIdentifier>{0943d91d-fdd3-44e5-86e9-698998d6ac44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\testing\ipc">
+      <UniqueIdentifier>{417bcda0-7d45-4e8e-a827-c0eec51c29b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\allocator_dependencies">
+      <UniqueIdentifier>{b88556c1-ed46-4e84-96ee-7a58ba8e63ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{7f3bb9df-51e7-40b4-8455-c8caede7ac83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\arrow\array\array_base.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\array_binary.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\array_decimal.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\array_dict.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\array_nested.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\array_primitive.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\builder_adaptive.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\builder_base.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\builder_binary.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\builder_decimal.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\builder_dict.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\builder_nested.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\builder_primitive.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\builder_union.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\concatenate.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\data.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\diff.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\diff_test.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\util.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\array\validate.cc">
+      <Filter>Source Files\array</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\chunked_array.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\compare.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\datum.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\device.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\extension_type.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\memory_pool.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\pretty_print.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\record_batch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\result.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\scalar.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\sparse_tensor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\status.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\table.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\table_builder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\tensor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\type.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\visitor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\tensor\coo_converter.cc">
+      <Filter>Source Files\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\tensor\csf_converter.cc">
+      <Filter>Source Files\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\tensor\csx_converter.cc">
+      <Filter>Source Files\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\c\bridge.cc">
+      <Filter>Source Files\c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\buffered.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\caching.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\compressed.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\file.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\hdfs.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\hdfs_internal.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\interfaces.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\memory.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\slow.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\stdio.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\transform.cc">
+      <Filter>Source Files\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\async_util.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\basic_decimal.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\bit_block_counter.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\bit_run_reader.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\bit_util.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\bitmap.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\bitmap_builders.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\bitmap_ops.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\bpacking.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\byte_size.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\cancel.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\compression.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\compression_brotli.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\compression_bz2.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\compression_lz4.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\compression_snappy.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\compression_zlib.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\compression_zstd.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\counting_semaphore.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\cpu_info.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\decimal.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\delimiting.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\formatting.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\future.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\int_util.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\io_util.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\key_value_metadata.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\logging.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\memory.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\mutex.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\string.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\string_builder.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\task_group.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\tdigest.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\thread_pool.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\time.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\trie.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\unreachable.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\uri.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\utf8.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\util\value_parsing.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\base64.cpp">
+      <Filter>Source Files\vendored</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\datetime\tz.cpp">
+      <Filter>Source Files\vendored\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\bignum.cc">
+      <Filter>Source Files\vendored\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\bignum-dtoa.cc">
+      <Filter>Source Files\vendored\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\cached-powers.cc">
+      <Filter>Source Files\vendored\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\diy-fp.cc">
+      <Filter>Source Files\vendored\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\double-conversion.cc">
+      <Filter>Source Files\vendored\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\fast-dtoa.cc">
+      <Filter>Source Files\vendored\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\fixed-dtoa.cc">
+      <Filter>Source Files\vendored\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\double-conversion\strtod.cc">
+      <Filter>Source Files\vendored\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\musl\strptime.c">
+      <Filter>Source Files\vendored\musl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriCommon.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriCompare.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriEscape.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriFile.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriIp4.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriIp4Base.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriMemory.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriNormalize.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriNormalizeBase.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriParse.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriParseBase.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriQuery.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriRecompose.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriResolve.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\vendored\uriparser\UriShorten.c">
+      <Filter>Source Files\vendored\uriparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\buffered_test.cc">
+      <Filter>Source Files\testing\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\compressed_test.cc">
+      <Filter>Source Files\testing\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\file_test.cc">
+      <Filter>Source Files\testing\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\hdfs_test.cc">
+      <Filter>Source Files\testing\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\memory_test.cc">
+      <Filter>Source Files\testing\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\io\test_common.cc">
+      <Filter>Source Files\testing\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\ipc\feather_test.cc">
+      <Filter>Source Files\testing\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\ipc\json_simple_test.cc">
+      <Filter>Source Files\testing\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\ipc\read_write_test.cc">
+      <Filter>Source Files\testing\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\ipc\tensor_test.cc">
+      <Filter>Source Files\testing\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\ipc\test_common.cc">
+      <Filter>Source Files\testing\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\testing\generator.cc">
+      <Filter>Source Files\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\testing\json_integration.cc">
+      <Filter>Source Files\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\testing\json_internal.cc">
+      <Filter>Source Files\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\testing\random.cc">
+      <Filter>Source Files\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arrow\testing\util.cc">
+      <Filter>Source Files\testing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\arrow\util\compression.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\arrow\util\compression_internal.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
