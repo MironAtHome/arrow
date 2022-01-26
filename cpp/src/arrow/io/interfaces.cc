@@ -64,10 +64,10 @@ Status SetIOThreadPoolCapacity(int threads) {
 
 FileInterface::~FileInterface() = default;
 
-Future<> FileInterface::CloseAsync() {
-  return DeferNotOk(
-      default_io_context().executor()->Submit([this]() { return Close(); }));
-}
+//Future<> FileInterface::CloseAsync() {
+//  return DeferNotOk(
+//      default_io_context().executor()->Submit([this]() { return Close(); }));
+//}
 
 Status FileInterface::Abort() { return Close(); }
 

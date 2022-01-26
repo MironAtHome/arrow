@@ -99,11 +99,14 @@ Status MakeRandomByteBuffer(int64_t length, MemoryPool* pool,
 }
 
 Status GetTestResourceRoot(std::string* out) {
-  const char* c_root = std::getenv("ARROW_TEST_DATA");
-  if (!c_root) {
+  size_t requiredSize = 0;
+  getenv_s(&requiredSize, NULL, 0, "ARROW_TEST_DATA");
+  if (requiredSize == 0) {
     return Status::IOError(
         "Test resources not found, set ARROW_TEST_DATA to <repo root>/testing/data");
   }
+  char* c_root = new char[requiredSize+1];
+  getenv_s(&requiredSize, c_root, requiredSize, "ARROW_TEST_DATA");
   *out = std::string(c_root);
   return Status::OK();
 }

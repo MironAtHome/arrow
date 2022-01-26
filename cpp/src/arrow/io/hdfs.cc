@@ -49,8 +49,10 @@ namespace io {
 namespace {
 
 std::string TranslateErrno(int error_code) {
+  char error_buffer[1024]{0};
   std::stringstream ss;
-  ss << error_code << " (" << strerror(error_code) << ")";
+  strerror_s(error_buffer, error_code);
+  ss << error_code << " (" << error_buffer << ")";
   if (error_code == 255) {
     // Unknown error can occur if the host is correct but the port is not
     ss << " Please check that you are connecting to the correct HDFS RPC port";

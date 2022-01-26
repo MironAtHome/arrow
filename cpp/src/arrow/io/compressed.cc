@@ -197,6 +197,13 @@ class CompressedOutputStream::Impl {
   mutable std::mutex lock_;
 };
 
+// with help from this example:
+// https://stackoverflow.com/questions/9954518/stdunique-ptr-with-an-incomplete-type-wont-compile
+void CompressedOutputStream::ImplDeleter::operator()(
+    CompressedOutputStream::Impl* ptr) const {
+  delete ptr;
+}
+
 Result<std::shared_ptr<CompressedOutputStream>> CompressedOutputStream::Make(
     util::Codec* codec, const std::shared_ptr<OutputStream>& raw, MemoryPool* pool) {
   // CAUTION: codec is not owned
@@ -407,6 +414,12 @@ class CompressedInputStream::Impl {
   int64_t total_pos_;
 };
 
+// with help from this example:
+// https://stackoverflow.com/questions/9954518/stdunique-ptr-with-an-incomplete-type-wont-compile
+void CompressedInputStream::ImplDeleter::operator()(CompressedInputStream::Impl* ptr) const {
+  delete ptr;
+}
+
 Result<std::shared_ptr<CompressedInputStream>> CompressedInputStream::Make(
     Codec* codec, const std::shared_ptr<InputStream>& raw, MemoryPool* pool) {
   // CAUTION: codec is not owned
@@ -414,7 +427,6 @@ Result<std::shared_ptr<CompressedInputStream>> CompressedInputStream::Make(
   res->impl_.reset(new Impl(pool, std::move(raw)));
   RETURN_NOT_OK(res->impl_->Init(codec));
   return res;
-  return Status::OK();
 }
 
 CompressedInputStream::~CompressedInputStream() { internal::CloseFromDestructor(this); }

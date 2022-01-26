@@ -21,6 +21,7 @@
 
 #include "parquet/test_util.h"
 
+#include <cstdlib>
 #include <algorithm>
 #include <chrono>
 #include <limits>
@@ -39,14 +40,22 @@
 namespace parquet {
 namespace test {
 
-const char* get_data_dir() {
-  const auto result = std::getenv("PARQUET_TEST_DATA");
-  if (!result || !result[0]) {
+std::string get_data_dir() {
+  std::stringstream ss;
+  char *result;
+  std::size_t requiredSize;
+  getenv_s(&requiredSize , NULL, 0, "PARQUET_TEST_DATA");
+  if (requiredSize == 0)
+  {
     throw ParquetTestException(
         "Please point the PARQUET_TEST_DATA environment "
         "variable to the test data directory");
   }
-  return result;
+  result = new char[requiredSize];
+  getenv_s(&requiredSize, result, requiredSize, "PARQUET_TEST_DATA");
+  ss << result;
+  delete[] result;
+  return ss.str();
 }
 
 std::string get_bad_data_dir() {

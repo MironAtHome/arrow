@@ -14,11 +14,18 @@
 // KIND, either express or implied.  See the License for the
 // specific language governing permissions and limitations
 // under the License.
-#include "arrow/status.h"
-#include "parquet/arrow/reader.h"
 
-extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size) {
-  auto status = parquet::arrow::internal::FuzzReader(data, static_cast<int64_t>(size));
-  ARROW_UNUSED(status);
-  return 0;
-}
+#ifndef PARQUET_VERSION_H
+#define PARQUET_VERSION_H
+
+#define PARQUET_VERSION_MAJOR 1
+#define PARQUET_VERSION_MINOR 0
+#define PARQUET_VERSION_PATCH 0
+
+#define PARQUET_SO_VERSION "1.0.0"
+#define PARQUET_FULL_SO_VERSION "1.0.0"
+
+// define the parquet created by version
+#define CREATED_BY_VERSION "parquet-cpp-arrow version 1.0.0"
+
+#endif  // PARQUET_VERSION_H

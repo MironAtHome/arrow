@@ -73,7 +73,12 @@ class ARROW_EXPORT CompressedOutputStream : public OutputStream {
   CompressedOutputStream() = default;
 
   class ARROW_NO_EXPORT Impl;
-  std::unique_ptr<Impl> impl_;
+  // with help from this example:
+  // https://stackoverflow.com/questions/9954518/stdunique-ptr-with-an-incomplete-type-wont-compile
+  struct ARROW_NO_EXPORT ImplDeleter {
+    void operator()(Impl*) const;
+  };
+  std::unique_ptr<Impl, ImplDeleter> impl_;
 };
 
 class ARROW_EXPORT CompressedInputStream
@@ -111,7 +116,12 @@ class ARROW_EXPORT CompressedInputStream
   Result<std::shared_ptr<Buffer>> DoRead(int64_t nbytes);
 
   class ARROW_NO_EXPORT Impl;
-  std::unique_ptr<Impl> impl_;
+  // with help from this example:
+  // https://stackoverflow.com/questions/9954518/stdunique-ptr-with-an-incomplete-type-wont-compile
+  struct ARROW_NO_EXPORT ImplDeleter {
+    void operator()(Impl*) const;
+  };
+  std::unique_ptr<Impl, ImplDeleter> impl_;
 };
 
 }  // namespace io

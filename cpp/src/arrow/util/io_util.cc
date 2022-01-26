@@ -188,7 +188,13 @@ Status ValidatePath(const std::string& s) {
 
 }  // namespace
 
-std::string ErrnoMessage(int errnum) { return std::strerror(errnum); }
+std::string ErrnoMessage(int errnum) {
+  char error_buffer[1024]{0};
+  std::stringstream ss;
+  strerror_s(error_buffer, errnum);
+  ss << error_buffer;
+  return ss.str();
+}
 
 #if _WIN32
 std::string WinErrorMessage(int errnum) {

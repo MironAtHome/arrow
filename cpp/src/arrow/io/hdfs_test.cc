@@ -95,7 +95,9 @@ class TestHadoopFileSystem : public ::testing::Test {
 
     Status msg = ConnectLibHdfs(&driver_shim);
     if (!msg.ok()) {
-      if (std::getenv("ARROW_HDFS_TEST_LIBHDFS_REQUIRE")) {
+      std::size_t requiredSize;
+      getenv_s(&requiredSize, NULL, 0, "ARROW_HDFS_TEST_LIBHDFS_REQUIRE");
+      if (requiredSize > 0) {
         FAIL() << "Loading libhdfs failed: " << msg.ToString();
       } else {
         std::cout << "Loading libhdfs failed, skipping tests gracefully: "
@@ -106,15 +108,32 @@ class TestHadoopFileSystem : public ::testing::Test {
 
     loaded_driver_ = true;
 
-    const char* host = std::getenv("ARROW_HDFS_TEST_HOST");
-    const char* port = std::getenv("ARROW_HDFS_TEST_PORT");
-    const char* user = std::getenv("ARROW_HDFS_TEST_USER");
+    
+    std::size_t requiredSize;
+    getenv_s(&requiredSize, NULL, 0, "ARROW_HDFS_TEST_HOST");
+    char * host = new char[requiredSize+1]{0};
+    getenv_s(&requiredSize, host, requiredSize, "ARROW_HDFS_TEST_HOST");
+    requiredSize = 0;
+
+    getenv_s(&requiredSize, NULL, 0, "ARROW_HDFS_TEST_PORT");
+    char * port = new char[requiredSize + 1]{0};
+    getenv_s(&requiredSize, port, requiredSize, "ARROW_HDFS_TEST_PORT");
+    requiredSize = 0;
+
+    getenv_s(&requiredSize, NULL, 0, "ARROW_HDFS_TEST_USER");
+    char *user = new char[requiredSize + 1]{0};
+    getenv_s(&requiredSize, user, requiredSize, "ARROW_HDFS_TEST_USER");
+    requiredSize = 0;
 
     ASSERT_TRUE(user != nullptr) << "Set ARROW_HDFS_TEST_USER";
 
     conf_.host = host == nullptr ? "localhost" : host;
     conf_.user = user;
     conf_.port = port == nullptr ? 20500 : atoi(port);
+    
+    delete[] host;
+    delete[ ] port;
+    delete[] user;
 
     ASSERT_OK(HadoopFileSystem::Connect(&conf_, &client_));
   }

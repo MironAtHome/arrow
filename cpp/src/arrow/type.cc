@@ -1004,7 +1004,7 @@ struct FieldPathGetImpl {
     }
 
     int depth = 0;
-    const T* out;
+    const T* out = NULL;
     for (int index : path->indices()) {
       if (children == nullptr) {
         return Status::NotImplemented("Get child data of non-struct array");

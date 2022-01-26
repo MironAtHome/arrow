@@ -58,7 +58,8 @@ Result<std::shared_ptr<RecordBatch>> ExampleBatch1() {
 
   random::RandomArrayGenerator gen(42);
   std::shared_ptr<Array> a, b, c, d, e, f, g, h, no_dict, compressed;
-  std::shared_ptr<Field> f_a, f_b, f_c, f_d, f_e, f_f, f_g, f_h, f_no_dict, f_compressed;
+  std::shared_ptr<arrow::Field> f_a, f_b, f_c, f_d, f_e, f_f, f_g, f_h, f_no_dict,
+      f_compressed;
 
   a = gen.Int16(kBatchSize, -10000, 10000, kNullProbability);
   f_a = field("a", a->type());

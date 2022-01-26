@@ -82,3 +82,9 @@ cpp/Brewfile.lock.json
 
 # docker volumes used for caching
 .docker
+/.vs/arrow-win/v15
+/.vs/arrow-win/v16
+/.vs
+/cpp/msvcproj/.vs
+/cpp/msvcproj/x64/Debug
+/cpp/msvcproj/x64/src
