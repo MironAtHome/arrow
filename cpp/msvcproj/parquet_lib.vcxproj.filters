@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4adfa00f-5317-43fe-b70c-9b5fda8b76ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated">
+      <UniqueIdentifier>{085d4afa-1d0b-4ded-863a-1848e0e9d7c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arrow">
+      <UniqueIdentifier>{d243b9f5-5564-4b84-8727-748405602b6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\encryption">
+      <UniqueIdentifier>{aed50355-6245-4425-8467-b05b18c69f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{03237b19-08b1-46b7-becc-5c1381e23585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fa076729-b841-44ed-a74f-da67600e1d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arrow">
+      <UniqueIdentifier>{7dd3daff-c017-4156-86ca-3c82fc0e1b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\encryption">
+      <UniqueIdentifier>{e8b0e2e7-7475-4710-ad2b-f380eb4585db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated">
+      <UniqueIdentifier>{1f999c56-8854-4b2c-a8b8-4ad8e9863b69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\parquet\bloom_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\column_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\column_scanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\column_writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\file_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\file_writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\hasher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\level_comparison.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\level_comparison_inc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\level_conversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\level_conversion_inc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\murmur3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\properties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\schema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\schema_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\stream_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\stream_writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\thrift_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\type_fwd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\windows_compatibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\windows_fixup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generated\parquet_constants.h">
+      <Filter>Header Files\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generated\parquet_types.h">
+      <Filter>Header Files\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\arrow\path_internal.h">
+      <Filter>Header Files\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\arrow\reader.h">
+      <Filter>Header Files\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\arrow\reader_internal.h">
+      <Filter>Header Files\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\arrow\schema.h">
+      <Filter>Header Files\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\arrow\schema_internal.h">
+      <Filter>Header Files\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\arrow\writer.h">
+      <Filter>Header Files\arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\encryption\encryption.h">
+      <Filter>Header Files\encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\encryption\internal_file_decryptor.h">
+      <Filter>Header Files\encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\encryption\internal_file_encryptor.h">
+      <Filter>Header Files\encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\column_page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\parquet\arrow\test_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\parquet\bloom_filter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\column_reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\column_scanner.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\column_writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encoding.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\exception.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\file_reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\file_writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\level_comparison.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\level_comparison_avx2.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\level_conversion.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\level_conversion_bmi2.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\metadata.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\murmur3.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\platform.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\printer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\properties.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\schema.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\statistics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\stream_reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\stream_writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\types.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\arrow\reader.cc">
+      <Filter>Source Files\arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\arrow\reader_internal.cc">
+      <Filter>Source Files\arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\arrow\schema.cc">
+      <Filter>Source Files\arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\arrow\schema_internal.cc">
+      <Filter>Source Files\arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\arrow\writer.cc">
+      <Filter>Source Files\arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\arrow\path_internal.cc">
+      <Filter>Source Files\arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\encryption.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\internal_file_decryptor.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\internal_file_encryptor.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated\parquet_constants.cpp">
+      <Filter>Source Files\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated\parquet_types.cpp">
+      <Filter>Source Files\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\crypto_factory.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\file_key_unwrapper.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\file_key_wrapper.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\key_management_test.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\key_material.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\key_metadata.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\key_toolkit.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\key_toolkit_internal.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\kms_client.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\parquet\encryption\local_wrap_kms_client.cc">
+      <Filter>Source Files\encryption</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

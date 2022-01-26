@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\generated\parquet_constants.h" />
+    <ClInclude Include="..\src\generated\parquet_types.h" />
+    <ClInclude Include="..\src\parquet\arrow\path_internal.h" />
+    <ClInclude Include="..\src\parquet\arrow\reader.h" />
+    <ClInclude Include="..\src\parquet\arrow\reader_internal.h" />
+    <ClInclude Include="..\src\parquet\arrow\schema.h" />
+    <ClInclude Include="..\src\parquet\arrow\schema_internal.h" />
+    <ClInclude Include="..\src\parquet\arrow\test_util.h" />
+    <ClInclude Include="..\src\parquet\arrow\writer.h" />
+    <ClInclude Include="..\src\parquet\bloom_filter.h" />
+    <ClInclude Include="..\src\parquet\column_page.h" />
+    <ClInclude Include="..\src\parquet\column_reader.h" />
+    <ClInclude Include="..\src\parquet\column_scanner.h" />
+    <ClInclude Include="..\src\parquet\column_writer.h" />
+    <ClInclude Include="..\src\parquet\encoding.h" />
+    <ClInclude Include="..\src\parquet\encryption\encryption.h" />
+    <ClInclude Include="..\src\parquet\encryption\internal_file_decryptor.h" />
+    <ClInclude Include="..\src\parquet\encryption\internal_file_encryptor.h" />
+    <ClInclude Include="..\src\parquet\exception.h" />
+    <ClInclude Include="..\src\parquet\file_reader.h" />
+    <ClInclude Include="..\src\parquet\file_writer.h" />
+    <ClInclude Include="..\src\parquet\hasher.h" />
+    <ClInclude Include="..\src\parquet\level_comparison.h" />
+    <ClInclude Include="..\src\parquet\level_comparison_inc.h" />
+    <ClInclude Include="..\src\parquet\level_conversion.h" />
+    <ClInclude Include="..\src\parquet\level_conversion_inc.h" />
+    <ClInclude Include="..\src\parquet\metadata.h" />
+    <ClInclude Include="..\src\parquet\murmur3.h" />
+    <ClInclude Include="..\src\parquet\pch.h" />
+    <ClInclude Include="..\src\parquet\platform.h" />
+    <ClInclude Include="..\src\parquet\printer.h" />
+    <ClInclude Include="..\src\parquet\properties.h" />
+    <ClInclude Include="..\src\parquet\schema.h" />
+    <ClInclude Include="..\src\parquet\schema_internal.h" />
+    <ClInclude Include="..\src\parquet\statistics.h" />
+    <ClInclude Include="..\src\parquet\stream_reader.h" />
+    <ClInclude Include="..\src\parquet\stream_writer.h" />
+    <ClInclude Include="..\src\parquet\thrift_internal.h" />
+    <ClInclude Include="..\src\parquet\types.h" />
+    <ClInclude Include="..\src\parquet\type_fwd.h" />
+    <ClInclude Include="..\src\parquet\windows_compatibility.h" />
+    <ClInclude Include="..\src\parquet\windows_fixup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\generated\parquet_constants.cpp" />
+    <ClCompile Include="..\src\generated\parquet_types.cpp" />
+    <ClCompile Include="..\src\parquet\arrow\path_internal.cc" />
+    <ClCompile Include="..\src\parquet\arrow\reader.cc" />
+    <ClCompile Include="..\src\parquet\arrow\reader_internal.cc" />
+    <ClCompile Include="..\src\parquet\arrow\schema.cc" />
+    <ClCompile Include="..\src\parquet\arrow\schema_internal.cc" />
+    <ClCompile Include="..\src\parquet\arrow\writer.cc" />
+    <ClCompile Include="..\src\parquet\bloom_filter.cc" />
+    <ClCompile Include="..\src\parquet\column_reader.cc" />
+    <ClCompile Include="..\src\parquet\column_scanner.cc" />
+    <ClCompile Include="..\src\parquet\column_writer.cc" />
+    <ClCompile Include="..\src\parquet\encoding.cc" />
+    <ClCompile Include="..\src\parquet\encryption\crypto_factory.cc" />
+    <ClCompile Include="..\src\parquet\encryption\encryption.cc" />
+    <ClCompile Include="..\src\parquet\encryption\file_key_unwrapper.cc" />
+    <ClCompile Include="..\src\parquet\encryption\file_key_wrapper.cc" />
+    <ClCompile Include="..\src\parquet\encryption\internal_file_decryptor.cc" />
+    <ClCompile Include="..\src\parquet\encryption\internal_file_encryptor.cc" />
+    <ClCompile Include="..\src\parquet\encryption\key_management_test.cc" />
+    <ClCompile Include="..\src\parquet\encryption\key_material.cc" />
+    <ClCompile Include="..\src\parquet\encryption\key_metadata.cc" />
+    <ClCompile Include="..\src\parquet\encryption\key_toolkit.cc" />
+    <ClCompile Include="..\src\parquet\encryption\key_toolkit_internal.cc" />
+    <ClCompile Include="..\src\parquet\encryption\kms_client.cc" />
+    <ClCompile Include="..\src\parquet\encryption\local_wrap_kms_client.cc" />
+    <ClCompile Include="..\src\parquet\exception.cc" />
+    <ClCompile Include="..\src\parquet\file_reader.cc" />
+    <ClCompile Include="..\src\parquet\file_writer.cc" />
+    <ClCompile Include="..\src\parquet\level_comparison.cc" />
+    <ClCompile Include="..\src\parquet\level_comparison_avx2.cc" />
+    <ClCompile Include="..\src\parquet\level_conversion.cc" />
+    <ClCompile Include="..\src\parquet\level_conversion_bmi2.cc" />
+    <ClCompile Include="..\src\parquet\metadata.cc" />
+    <ClCompile Include="..\src\parquet\murmur3.cc" />
+    <ClCompile Include="..\src\parquet\platform.cc" />
+    <ClCompile Include="..\src\parquet\printer.cc" />
+    <ClCompile Include="..\src\parquet\properties.cc" />
+    <ClCompile Include="..\src\parquet\schema.cc" />
+    <ClCompile Include="..\src\parquet\statistics.cc" />
+    <ClCompile Include="..\src\parquet\stream_reader.cc" />
+    <ClCompile Include="..\src\parquet\stream_writer.cc" />
+    <ClCompile Include="..\src\parquet\types.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="arrow_lib.vcxproj">
+      <Project>{e02ef412-186a-44c4-b305-23bfe5df0b86}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2D421359-0084-40F5-9312-94EE0CBDA000}</ProjectGuid>
+    <RootNamespace>parquetlib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <ProjectName>parquet_lib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-->
+  <PropertyGroup>
+    <IncludePath>$(UniversalCRT_IncludePath);$(ProjectDir)..\src;$(ProjectDir)..\..\..\benchmark\include;$(ProjectDir)..\..\..\thrift\lib\cpp\src;$(ProjectDir)..\..\..\googletest\googletest\include;$(ProjectDir)..\..\..\googletest\googlemock\include;$(ProjectDir)..\..\..\boost\numeric_conversion\include;$(ProjectDir)..\..\..\boost\core\include;$(ProjectDir)..\..\..\boost\config\include;$(ProjectDir)..\..\..\boost\type_traits\include;$(ProjectDir)..\..\..\boost\mpl\include;$(ProjectDir)..\..\..\boost\preprocessor\include;$(ProjectDir)..\..\..\boost\throw_exception\include;$(ProjectDir)..\..\..\boost\assert\include;$(ProjectDir)..\..\..\boost\predef\include;$(ProjectDir)..\..\..\boost\smart_ptr\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_MSVC;_MSC_VER=1915;PARQUET_EXPORTING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_MSC_VER=1929;BOOST_MSVC=1929;PARQUET_STATIC;ARROW_STATIC;ARROW_TESTING_STATIC;ARROW_MIMALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
